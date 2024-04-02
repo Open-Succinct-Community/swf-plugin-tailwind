@@ -1572,7 +1572,7 @@ h4{
 }
 
 *[readonly] {
-  pointer-events: none;
+  #pointer-events: none;
 }
 
 div.div[readonly]{
