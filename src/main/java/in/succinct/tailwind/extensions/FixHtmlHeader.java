@@ -34,6 +34,8 @@ public class FixHtmlHeader {
             head.addControl(new Script("/scripts/highlight.js/highlight.js"));
             head.addControl(new Script("/scripts/highlight.js/languages/json.min.js"));
             head.addControl(new Css("/scripts/highlight.js/styles/github.min.css"));
+            head.addControl(new Script("/scripts/node_modules/mermaid/dist/mermaid.min.js"));
+            
 
 
         }
