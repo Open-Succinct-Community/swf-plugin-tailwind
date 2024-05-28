@@ -114,15 +114,12 @@ h4 {
 }
 
 .col-form-label {
-  @apply text-dark text-sm sm:text-base mx-1 sm:mb-2 relative top-2 pt-1 sm:static;
+  @apply text-dark text-sm sm:text-base mx-1 sm:mb-2 relative  my-3 py-2 sm:static;
 }
 .text-area {
-  @apply border-0 border-b-2 border-[#e1e1ff] py-2 focus:border-primary focus:outline-none;
+  @apply border-0 border-b-2 border-[#e1e1ff] py-2 ;
 }
 
-[disabled] {
-  @apply text-gray-500 border-none;
-}
 
 @layer components {
   .col-12 {
@@ -180,6 +177,35 @@ h4 {
 .row {
   @apply flex flex-wrap items-start;
 }
+
+input.timestamp-box,
+input.text-box,
+input.date-box,
+input.file-text-box,
+input.select,
+input.text-area,
+input.password-text {
+  @apply w-full mx-0 mt-3 px-1 py-2  h-full ;
+}
+
+
+.check-box {
+  @apply my-4 mx-1 flex p-3 border-2  border-gray-600 ;
+}
+[disabled] {
+  @apply text-gray-500 border-gray-200;
+}
+input[readonly] {
+  @apply text-gray-500 border-2 border-gray-300 ;
+  pointer-events: auto;
+
+}
+
+/* Conflicts with tailwind forms
+.check-box {
+  @apply mb-[8pt]  mt-2 mx-1 flex border-2  rounded-lg  border-gray-600 focus:border-primary focus:outline-none;
+}
+
 .timestamp-box,
 .text-box,
 .date-box,
@@ -190,23 +216,22 @@ h4 {
 .password-text {
   @apply mb-[8pt]  py-2 px-2  flex h-full w-full border-0 border-b-2  rounded-lg  border-gray-300 focus:border-primary focus:outline-none;
 }
-.check-box {
-  @apply mb-[8pt]  mt-2 mx-1 flex border-2  rounded-lg  border-gray-600 focus:border-primary focus:outline-none;
-}
-
 *[readonly] {
-  @apply mb-[8pt] px-1 h-full text-gray-600 border-0 focus:outline-none;
+  @apply mb-[8pt] px-1  text-gray-600 border-0 focus:outline-none;
   pointer-events: auto;
 }
+
+.text-center {
+  text-align: center !important;
+}
+*/
 div.div[readonly] {
   @apply mb-4;
   pointer-events: auto;
 }
-.text-center {
-  text-align: center !important;
-}
+
 .submit {
-  @apply h-full w-[100%] mt-3 py-3 px-3 rounded-md bg-primary text-white hover:bg-dark hover:text-white;
+  @apply h-full w-[100%] mt-2 py-3 px-3 rounded-md bg-primary text-white hover:bg-dark hover:text-white;
 }
 .btn-link {
   @apply text-primary bg-white mt-0     py-1 hover:bg-white hover:text-primary cursor-pointer;
@@ -261,6 +286,8 @@ span.glyphicon {
 .d-none {
   display: none;
 }
+/*
 .tabs > .select.form-control {
-  @apply h-10 bg-slate-200;
+  @apply h-10 bg-slate-100;
 }
+*/

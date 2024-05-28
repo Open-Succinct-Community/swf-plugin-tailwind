@@ -1,3 +1,5 @@
+const withMT = require("@material-tailwind/html/utils/withMT");
+
 module.exports = {
   content: ["../templates/**/html/**/*.{html,js,md}", "../templates/**/markdown/**/*.{html,js,md}", "../scripts/application.js" , "../templates/css/_global.css"],
   safelist: [ "offset-8", "offset-5", "offset-4" , "offset-3", "offset-2",
@@ -26,10 +28,6 @@ module.exports = {
       "2xl": "1320px",
       // => @media (min-width: 1400px) { ... }
     },
-    container: {
-      center: true,
-      padding: "16px",
-    },
     extend: {
       colors: {
         black: "#212b36",
@@ -51,5 +49,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
