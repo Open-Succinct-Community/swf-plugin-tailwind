@@ -1788,7 +1788,16 @@ input[readonly]{
 */
 
 div.div[readonly]{
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
   pointer-events: auto;
 }
 
