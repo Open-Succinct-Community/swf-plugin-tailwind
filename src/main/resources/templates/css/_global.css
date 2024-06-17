@@ -106,7 +106,7 @@ ul.dropdown-menu > li.active {
 
 .panel,
 .hotlinks {
-  @apply mx-4 my-2 py-0;
+  @apply mx-4 my-2 pb-0 pt-11 md:pt-0;
 }
 
 h4 {
@@ -190,13 +190,13 @@ input.password-text {
 
 
 .check-box {
-  @apply my-4 mx-1 flex p-3 border-2  border-gray-600 ;
+  @apply my-4  flex p-3 border-2  border-gray-400 ;
 }
 [disabled] {
-  @apply text-gray-500 border-gray-200;
+  @apply text-gray-400 border-gray-400 ;
 }
 input[readonly] {
-  @apply text-gray-500 border-2 border-gray-300 ;
+  @apply text-gray-400 border-2 border-gray-400 ;
   pointer-events: auto;
 
 }
@@ -214,7 +214,7 @@ input[readonly] {
 .text-area,
 .autocomplete-text,
 .password-text {
-  @apply mb-[8pt]  py-2 px-2  flex h-full w-full border-0 border-b-2  rounded-lg  border-gray-300 focus:border-primary focus:outline-none;
+  @apply mb-[8pt]  py-2 px-2  flex h-full w-full border-0 border-b-2  rounded-lg  border-gray-400 focus:border-primary focus:outline-none;
 }
 *[readonly] {
   @apply mb-[8pt] px-1  text-gray-600 border-0 focus:outline-none;
@@ -226,7 +226,7 @@ input[readonly] {
 }
 */
 div.div[readonly] {
-  @apply  text-gray-500 border-gray-300 border-2 mt-2 py-2 px-1;
+  @apply  text-gray-400 border-gray-400 border-2 mt-2 py-2 px-1;
   pointer-events: auto;
 }
 
