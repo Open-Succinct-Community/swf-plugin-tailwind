@@ -1775,6 +1775,15 @@ input[readonly]{
   pointer-events: auto;
 }
 
+text-area[readonly]{
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+  pointer-events: auto;
+}
+
 /* Conflicts with tailwind forms
 .check-box {
   @apply mb-[8pt]  mt-2 mx-1 flex border-2  rounded-lg  border-gray-600 focus:border-primary focus:outline-none;
