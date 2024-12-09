@@ -9,7 +9,7 @@ module.exports = {
     "col-2", "col-4", "col-6", "col-8", "col-12",
     "lg:col-2", "lg:col-4", "lg:col-6", "lg:col-8", "lg:col-12",
     "sm:col-2", "sm:col-4", "sm:col-6", "sm:col-8", "sm:col-12",
-    "p-1","m-1","px-1","py-1"
+    "p-1","m-1","px-1","py-1","justify-end","self-center","items-center"
     ],
   theme: {
     screens: {
